@@ -1,0 +1,70 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#menu{
+    display: flex;
+    justify-content: space-around;
+    flex-flow:row;
+    position:relative;
+    align-items: stretch;
+    color:white;
+    background-color: black;
+    height: 100%;
+    width:100%;
+}
+
+#fut:hover, #bas:hover, #nat:hover{
+    width:3024px;
+    transition:1s;
+    border:3px solid red;
+    z-index:1;
+    filter: grayscale(0);
+    font-size: 50px;
+    transition-property: width;
+    transition-timing-function: ease-out;
+}
+
+#fut, #bas, #nat{
+    background-image:url("../img/fut.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    filter:grayscale(100%);
+    width: 100%;
+    border:0/100px;
+
+    /* TRANSIÇÕES E ANIMAÇÕES*/
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0,.99,1,0);
+    
+}
+#bas{background-image: url("../img/bas.jpg");}
+#nat{background-image: url("../img/natacao.jpeg");}
+span{
+    width:100%;
+    display: flex;
+    height:795px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    filter: grayscale(100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+span:hover{
+font-size:50px;
+transition:1s;
+font-weight: 800;
+}
+
